@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>DressMe Research</title>
+
+        <!-- CSS FILES -->                
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet">
+        
+<!--
+
+TemplateMo 587 Tiya Golf Club
+
+https://templatemo.com/tm-587-tiya-golf-club
+
+-->
+    </head>
+    
+    <body>
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">                
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="Tiya Golf Club">
+                        <span class="navbar-brand-text">
+                            DressMe
+                            <small>With VR</small>
+                        </span>
+                    </a>
+
+                    <div class="d-lg-none ms-auto me-3">
+                        <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Member Login</a>
+                    </div>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#home">Home</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#about">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#background">Background</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#problem">Research Problem</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="document-list.html">Documents</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#team">Team</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Components</a>
+
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="pose-detection.html">Pose Detection</a></li>
+                                    <li><a class="dropdown-item" href="measurement-estimation.html">Measurement Estimation</a></li>
+                                    <li><a class="dropdown-item" href="3d-modeling.html">3D Modeling</a></li>
+                                    <li><a class="dropdown-item" href="virtual-reality.html">Virtual Reality</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">                
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Member Login</h5>
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                
+                <div class="offcanvas-body d-flex flex-column">
+                    <form class="custom-form member-login-form" action="#" method="post" role="form">
+
+                        <div class="member-login-form-body">
+                            <div class="mb-4">
+                                <label class="form-label mb-2" for="member-login-number">Membership No.</label>
+
+                                <input type="text" name="member-login-number" id="member-login-number" class="form-control" placeholder="11002560" required>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label mb-2" for="member-login-password">Password</label>
+
+                                <input type="password" name="member-login-password" id="member-login-password" pattern="[0-9a-zA-Z]{4,10}" class="form-control" placeholder="Password" required="">
+                            </div>
+
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Remember me
+                                </label>
+                            </div>
+
+                            <div class="col-lg-5 col-md-7 col-8 mx-auto">
+                                <button type="submit" class="form-control">Login</button>
+                            </div>
+
+                            <div class="text-center my-4">
+                                <a href="#">Forgotten password?</a>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="mt-auto mb-5">
+                        <p>
+                            <strong class="text-white me-3">Any Questions?</strong>
+
+                            <a href="tel: 010-020-0340" class="contact-link">
+                            	010-020-0340
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3D405B" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+            </div>
+            
+
+            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+
+                <div class="section-overlay"></div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3D405B" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+
+                            <h3 class="cd-headline rotate-1 text-white mb-4 pb-2">
+                                <span>To implement a new entry to fashion designing world with customized 3d technology approach experiencing in VR (Virtual Reality)</span>
+                                <br />
+                                <span class="cd-words-wrapper">
+                                    <b class="is-visible">Forward with</b>
+                                    <b>Modern</b>
+                                    <b>VR Technology</b>
+                                </span>
+                            </h3>
+
+                            <div class="custom-btn-group">
+                                <a href="#section_2" class="btn custom-btn smoothscroll me-3">Our Story</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="ratio ratio-16x9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/1htgwCk7qj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+            </section>
+
+
+            <section class="about-section section-padding" id="about">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 text-center">
+                            <h2 class="mb-lg-5 mb-4">About DressMe</h2>
+                        </div>
+
+                        <div class="col-lg-12 col-12 me-auto mb-5 mb-lg-5">
+                            <h3 class="mb-3">Introduction</h3>
+
+                            <p>Currently fashion design industry rapidly engaging with Information technology field. Also, shoppers now prefer online shopping than in-store shopping. But there is still a low level of user satisfaction because of the poor fit-on experience. The DressMe mobile app is developed to design customized men trousers for users. This app provides a unique service that combines the convenience of on-demand tailoring with the latest virtual reality (VR) technology. The app connects users with talented fashion designers. Measurements getting process goes with user’s uploaded images. User needs to capture front, back and side view image from mobile phone and then calculate necessary measurements from it. According to that measurement’s custom-fitted trousers are made by fashion designers. Then user can be tried on it via app’s VR feature</p>
+                        
+                            <ul class="ms-5">
+                                <li>Real-time pose detection to detect two preferred postures of a person for help getting correct measurements</li>
+                                <li>Get accurate body measurements for designing a dress</li>
+                                <li>Human 3d modelling to create a 3d customized body model according to the measurements</li>
+                                <li>Virtual reality to give better experience with creating virtual environment with real sized dress embedded 3d model</li>
+                            </ul>
+                        
+                        </div>
+
+                        <div class="col-lg-12 col-12">
+                            <h3>Objective</h3>
+                            <p>The DressMe mobile app's main goal is to make shopping for custom-fitted trousers simple and convenient for clients. Customers may virtually try on the trousers by utilizing the most recent VR technology, saving time and eliminating the need for several in-person fittings. DressMe also seeks to offer high quality and well-fitted pants that are customized to the customer's unique body shape by employing qualified fashion designers</p>
+                            <h3 class="mt-5">Sub Objectives</h3>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 text-center">
+                                    <img class="member-block-image img-fluid" src="images/comp/pose_e.png" />
+                                    <h5>Pose Detection</h5>
+                                    <p>
+                                        Real-time pose detection to detect two preferred postures of a person for help getting correct measurements
+                                    </p>
+                                </div>
+                                <div class="col-lg-3 col-md-6 text-center">
+                                    <img class="member-block-image img-fluid" src="images/comp/mes_e.png" />
+                                    <h5>Measurement Estimation</h5>
+                                    <p>
+                                        Real-time pose detection to detect two preferred postures of a person for help getting correct measurements
+                                    </p>
+                                </div>
+                                <div class="col-lg-3 col-md-6 text-center">
+                                    <img class="member-block-image img-fluid" src="images/comp/3d_e.jpg" />
+                                    <h5>3D Modeling</h5>
+                                    <p>
+                                        Real-time pose detection to detect two preferred postures of a person for help getting correct measurements
+                                    </p>
+                                </div>
+                                <div class="col-lg-3 col-md-6 text-center">
+                                    <img class="member-block-image img-fluid" src="images/comp/vr_e.jpg" />
+                                    <h5>Virtual Reality</h5>
+                                    <p>
+                                        Real-time pose detection to detect two preferred postures of a person for help getting correct measurements
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                       
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section-bg-image" id="background">
+                <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path></svg>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12">
+                            <div class="section-bg-image-block">
+                                <h2 class="mb-lg-3">Background</h2>
+
+                                <p>Traditional tailoring often involves multiple in-person fittings, which can be time-consuming and inconvenient for customers. Additionally, ready-to-wear trousers are often mass-produced and not tailored to the customer's unique body shape, leading to an ill-fitting and uncomfortable experience. Also, correctness of measurements depend on the tailors knowledge and this process is time consuming and costly. Based on the advanced development of technical devices, today’s shopping is evolving in a variety of ways, from existing offline to online. The DressMe mobile app seeks to address these issues by providing a more convenient and personalized shopping experience for men's trousers.</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path></svg>
+            </section>
+
+
+            <section class="membership-section section-padding" id="problem">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 text-center mx-auto mb-lg-5 mb-4">
+                            <h2>Research Problem</h2>
+                        </div>
+                        <p>The research problem addressed by DressMe is the lack of a convenient and personalized shopping experience for men's trousers. Ready-to-wear trousers are often not tailored to the customer's unique body shape, leading to an ill-fitting and uncomfortable experience. Traditional tailoring often involves multiple in-person fittings, which can be time-consuming and inconvenient for customers.</p>
+
+                        <ul >
+                            <li class="ms-5">No customized costume designs in online applications</li>
+                            <li class="ms-5">No application to directly interact with a designer who is in another location</li>
+                            <li class="ms-5">Unable to see how the costume fits actually in a virtual environment</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="events-section section-bg section-padding" id="team">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12">
+                            <h2 class="mb-lg-3">Research Team</h2>
+                            <div class="row d-flex">
+                                <div class="col-lg-3 col-md-6 col-12">
+                                    <div class="member-block">
+                                        <div class="member-block-image-wrap">
+                                            <img src="images/members/lr.jpg" class="member-block-image img-fluid" alt="">
+        
+                                            <ul class="social-icon">
+                                                <li class="social-icon-item mb-2">
+                                                    <a href="#" class="social-icon-link bi-linkedin"></a>
+                                                </li>
+                                                <li class="email-icon-item">
+                                                    <a href="#" class="social-icon-link bi-at"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+        
+                                        <div class="member-block-info align-items-center">
+                                            <h5 class="pb-0 mb-0">Dr. Lakmal Roopasinghe</h5>
+                                            <p class="ms-auto pt-0 mt-0">Supervisor</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-12">
+                                    <div class="member-block">
+                                        <div class="member-block-image-wrap">
+                                            <img src="images/members/cl.jpg" class="member-block-image img-fluid" alt="">
+        
+                                            <ul class="social-icon">
+                                                <li class="social-icon-item mb-2">
+                                                    <a href="#" class="social-icon-link bi-linkedin"></a>
+                                                </li>
+                                                <li class="email-icon-item">
+                                                    <a href="#" class="social-icon-link bi-at"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+        
+                                        <div class="member-block-info align-items-center">
+                                            <h5 class="pb-0 mb-0">Ms. Chethana Liyanapathirana</h5>
+                                            <p class="ms-auto pt-0 mt-0">Co-supervisor</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-12">
+                                    <div class="member-block">
+                                        <div class="member-block-image-wrap">
+                                            <img src="images/members/successful-asian-lady-boss-red-blazer-holding-clipboard-with-documens-pen-working-looking-happy-white-background.jpg" class="member-block-image img-fluid" alt="">
+        
+                                            <ul class="social-icon">
+                                                <li class="social-icon-item mb-2">
+                                                    <a href="#" class="social-icon-link bi-linkedin"></a>
+                                                </li>
+                                                <li class="email-icon-item">
+                                                    <a href="#" class="social-icon-link bi-at"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+        
+                                        <div class="member-block-info align-items-center">
+                                            <h5 class="pb-0 mb-0">Samarasekara DMSY</h5>
+                                            <p class="ms-auto pt-0 mt-0">Leader</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-12">
+                                    <div class="member-block">
+                                        <div class="member-block-image-wrap">
+                                            <img src="images/members/successful-asian-lady-boss-red-blazer-holding-clipboard-with-documens-pen-working-looking-happy-white-background.jpg" class="member-block-image img-fluid" alt="">
+        
+                                            <ul class="social-icon">
+                                                <li class="social-icon-item mb-2">
+                                                    <a href="#" class="social-icon-link bi-linkedin"></a>
+                                                </li>
+                                                <li class="email-icon-item">
+                                                    <a href="#" class="social-icon-link bi-at"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+        
+                                        <div class="member-block-info align-items-center">
+                                            <h5 class="pb-0 mb-0">Prabodhya UHH</h5>
+                                            <p class="ms-auto pt-0 mt-0">Member</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-12">
+                                    <div class="member-block">
+                                        <div class="member-block-image-wrap">
+                                            <img src="images/members/successful-asian-lady-boss-red-blazer-holding-clipboard-with-documens-pen-working-looking-happy-white-background.jpg" class="member-block-image img-fluid" alt="">
+        
+                                            <ul class="social-icon">
+                                                <li class="social-icon-item mb-2">
+                                                    <a href="#" class="social-icon-link bi-linkedin"></a>
+                                                </li>
+                                                <li class="email-icon-item">
+                                                    <a href="#" class="social-icon-link bi-at"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+        
+                                        <div class="member-block-info align-items-center">
+                                            <h5 class="pb-0 mb-0">Sulochana KBJ</h5>
+                                            <p class="ms-auto pt-0 mt-0">Member</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-12">
+                                    <div class="member-block">
+                                        <div class="member-block-image-wrap">
+                                            <img src="images/members/dineth.jpg" class="member-block-image img-fluid" alt="">
+        
+                                            <ul class="social-icon">
+                                                <li class="social-icon-item mb-2">
+                                                    <a href="#" class="social-icon-link bi-linkedin"></a>
+                                                </li>
+                                                <li class="email-icon-item">
+                                                    <a href="#" class="social-icon-link bi-at"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+        
+                                        <div class="member-block-info align-items-center">
+                                            <h5 class="pb-0 mb-0">Ekanayaka GMDP</h5>
+                                            <p class="ms-auto pt-0 mt-0">Member</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+        <footer class="site-footer">
+            <div class="container pt-5">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 me-auto mb-5 mb-lg-0">
+                        <a class="navbar-brand d-flex align-items-center" href="index.html">
+                            <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="">
+                            <span class="navbar-brand-text">
+                                DressMe
+                                <small>with VR</small>
+                            </span>
+                        </a>
+                        <img src="images/WorldMap.svg" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-3 col-12">
+                        <h5 class="site-footer-title mb-4">Reach Us</h5>
+
+                        <p class="d-flex border-bottom pb-3 mb-3 me-lg-3">
+                            <span class="me-3">Email</span>
+                            sendtodineth@gmail.com
+                        </p>
+
+                        
+                        <p class="copyright-text">Copyright ©2023 DressMe team</p>
+                    </div>
+
+                        
+
+                </div>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#81B29A" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+        </footer>
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/animated-headline.js"></script>
+        <script src="js/modernizr.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>
